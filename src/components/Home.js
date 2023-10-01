@@ -1,8 +1,9 @@
 import React from "react";
 
-function Home() {
+function Home({ home }) {
   return (
     <div
+      ref={home}
       id="home"
       className="h-screen flex items-center relative top-0 justify-end"
     >

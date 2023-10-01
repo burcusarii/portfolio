@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar li {
+  cursor: pointer;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  color: rgb(209, 200, 232);
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  color: rgb(88, 66, 140);
+}

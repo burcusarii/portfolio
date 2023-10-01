@@ -1,14 +1,14 @@
 import React from "react";
 
-function About({ about }) {
+function Contact({ contact }) {
   return (
     <div
-      ref={about}
-      id="about"
+      ref={contact}
+      id="contact"
       className="flex justify-center items-center h-screen"
     >
       <div className="	w-11/12		m-auto	 text-white">
-        <h2 className="text-3xl text-center py-2 font-bold">About me!</h2>
+        <h2 className="text-3xl text-center py-2 font-bold">Contact me!</h2>
         <div className="flex gap-4">
           <div className="w-3/5">
             <img
@@ -37,4 +37,4 @@ function About({ about }) {
   );
 }
 
-export default About;
+export default Contact;
