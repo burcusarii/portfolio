@@ -32,10 +32,11 @@ function App() {
       />
 
       <Home home={home} />
-      <About about={about} />
       <Project projects={projects} />
 
       <Skill skills={skills} />
+      <About about={about} />
+
       <Footer />
     </main>
   );
