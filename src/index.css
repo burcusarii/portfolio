@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
 .navbar li {
   cursor: pointer;
 }
@@ -18,4 +21,8 @@
 
 .top-btn:hover {
   color: rgb(88, 66, 140);
+}
+
+.navbar-social li {
+  cursor: pointer;
 }

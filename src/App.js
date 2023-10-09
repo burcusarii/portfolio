@@ -4,7 +4,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import ScrollToTop from "./assets/ScrollToTop";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
   const about = useRef(null);
   const projects = useRef(null);
   const skills = useRef(null);
-  const contact = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -30,7 +29,6 @@ function App() {
         home={home}
         projects={projects}
         skills={skills}
-        contact={contact}
       />
 
       <Home home={home} />
@@ -38,7 +36,7 @@ function App() {
       <Project projects={projects} />
 
       <Skill skills={skills} />
-      <Contact contact={contact} />
+      <Footer />
     </main>
   );
 }
