@@ -12,6 +12,7 @@ function App() {
   const about = useRef(null);
   const projects = useRef(null);
   const skills = useRef(null);
+  const footer = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -31,13 +32,13 @@ function App() {
         skills={skills}
       />
 
-      <Home home={home} />
+      <Home home={home} scrollToSection={scrollToSection} footer={footer} />
       <Project projects={projects} />
 
       <Skill skills={skills} />
       <About about={about} />
 
-      <Footer />
+      <Footer footer={footer} />
     </main>
   );
 }

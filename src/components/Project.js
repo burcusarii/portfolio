@@ -9,29 +9,25 @@ function Project({ projects }) {
     >
       <div className="	w-11/12		m-auto text-white flex flex-col ">
         <h2 className="text-3xl text-center py-2 font-bold">My Project</h2>
-        <div className=" grid grid-cols-5 pt-6  gap-4 justify-items-center	">
+        <div className=" grid grid-cols-4  pt-6  gap-4 justify-items-center">
           <Card
-            project_name={"Github Kullanıcı Bulma"}
-            project_link={"www.github.com"}
+            project_name={"To Do App with React"}
+            project_link={
+              "https://github.com/burcusarii/todoapp-with-context-api"
+            }
           ></Card>
           <Card
-            project_name={"Github Kullanıcı Bulma"}
-            project_link={"www.github.com"}
+            project_name={"Tic Tac Toe"}
+            project_link={"https://github.com/burcusarii/tic-tac-toe-react"}
           ></Card>
           <Card
-            project_name={"Github Kullanıcı Bulma"}
-            project_link={"www.github.com"}
+            project_name={"Github Users"}
+            project_link={"https://github.com/burcusarii/github-users"}
           ></Card>
           <Card
-            project_name={"Github Kullanıcı Bulma"}
-            project_link={"www.github.com"}
+            project_name={"Translate App"}
+            project_link={"https://github.com/burcusarii/translate-api"}
           ></Card>
-          <Card
-            project_name={"Github Kullanıcı Bulma"}
-            project_link={"www.github.com"}
-          >
-            {" "}
-          </Card>
         </div>
       </div>
     </div>

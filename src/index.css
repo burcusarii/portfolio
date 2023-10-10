@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import "animate.css";
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
-.navbar li {
+
+#home {
+  background-image: url(assets/images/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar li,
+.navbar-social li {
   cursor: pointer;
+  transition: 0.5s;
 }
 
+.navbar li:hover {
+  transform: scale(1.1);
+}
+.navbar-social li:hover {
+  color: rgb(116, 59, 163);
+  transform: scale(1.1);
+}
 .top-btn {
   position: fixed;
   bottom: 15px;
@@ -23,10 +41,6 @@ body {
   color: rgb(88, 66, 140);
 }
 
-.navbar-social li {
-  cursor: pointer;
-}
-
 .skills img {
   transition: 0.5s;
 }
@@ -36,8 +50,12 @@ body {
 
 .card {
   transition: 0.5s;
+  background-image: url(assets/images/card-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }

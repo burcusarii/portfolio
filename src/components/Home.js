@@ -1,20 +1,29 @@
 import React from "react";
-
-function Home({ home }) {
+import TypewriterComponent from "typewriter-effect";
+function Home({ home, footer, scrollToSection }) {
   return (
     <div
       ref={home}
       id="home"
-      className="h-screen flex items-center relative top-0 justify-end"
+      className="h-screen flex flex-col items-center gap-y-5 relative top-0 justify-center"
     >
-      <img
-        className="w-1/3	"
-        src="https://i.pinimg.com/originals/8d/c3/bf/8dc3bf24f2cc78b5176af3c435066807.png"
-        alt=""
-      />
-      <h1 className="text-5xl text-white font-bold mr-20 text-right	w-2/3	">
-        Hello, I'm Burcu SARI. <br /> I'm a Frontend Developer
+      <h1 className="text-5xl text-black font-bold  text-center	w-2/3	animate__animated animate__pulse">
+        Hello, I'm Burcu SARI. <br />
+        <TypewriterComponent
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("I'm a Frontend Developer")
+
+              .start();
+          }}
+        />
       </h1>
+      <button
+        onClick={() => scrollToSection(footer)}
+        className="border border-black	px-9 py-2 mt-5 bg-red-50	 duration-300	 hover:bg-red-200 animate__animated animate__swing"
+      >
+        Contact Me!
+      </button>
     </div>
   );
 }
