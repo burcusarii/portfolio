@@ -5,7 +5,7 @@ function Home({ home, footer, scrollToSection }) {
     <div
       ref={home}
       id="home"
-      className="h-screen flex flex-col items-center gap-y-5 relative top-0 justify-center"
+      className="h-screen flex  flex-col items-center gap-y-5 justify-center"
     >
       <h1 className="text-5xl text-black font-bold  text-center	w-2/3	animate__animated animate__pulse">
         Hello, I'm Burcu SARI. <br />

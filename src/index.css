@@ -27,6 +27,31 @@ body {
   color: rgb(116, 59, 163);
   transform: scale(1.1);
 }
+
+.active {
+  height: 4rem;
+  position: fixed;
+  transition: 1s linear;
+  width: 100%;
+  top: 0;
+}
+.hidden {
+  height: 4rem;
+  position: fixed;
+  transition: 1s linear;
+  width: 100%;
+  top: -80px;
+}
+
+.active-project {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+.hidden-project {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
 .top-btn {
   position: fixed;
   bottom: 15px;

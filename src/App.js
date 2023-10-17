@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <main className="bg-gradient-to-r from-violet-900 to-violet-500">
+    <main>
       <ScrollToTop />
       <Navbar
         scrollToSection={scrollToSection}
