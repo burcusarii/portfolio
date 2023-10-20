@@ -8,12 +8,14 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-#home {
-  background-image: url(assets/images/home-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.light-theme {
+  background-color: #f9f3df;
 }
+
+.dark-theme {
+  background-color: #3f2e3e;
+}
+/* NAVBAR  */
 .navbar li,
 .navbar-social li {
   cursor: pointer;
@@ -22,9 +24,10 @@ body {
 
 .navbar li:hover {
   transform: scale(1.1);
+  color: #cc7351;
 }
 .navbar-social li:hover {
-  color: rgb(116, 59, 163);
+  color: #cc7351;
   transform: scale(1.1);
 }
 
@@ -73,14 +76,18 @@ body {
   transform: scale(1.1);
 }
 
+/* HOME */
+
+.home-text {
+  color: #cc7351;
+}
+
+/* PROJECT */
+
 .card {
   transition: 0.5s;
-  background-image: url(assets/images/card-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card:hover {
-  transform: scale(0.95);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

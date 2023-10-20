@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa6";
+import { BsSun, BsMoonFill } from "react-icons/bs";
 
-function Navbar({ scrollToSection, home, about, projects, skills }) {
+function Navbar({
+  scrollToSection,
+  home,
+  about,
+  projects,
+  skills,
+  changeTheme,
+  harry,
+}) {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -19,7 +28,6 @@ function Navbar({ scrollToSection, home, about, projects, skills }) {
       setLastScrollY(window.scrollY);
     }
   };
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
@@ -33,8 +41,8 @@ function Navbar({ scrollToSection, home, about, projects, skills }) {
 
   return (
     <div className={`${show ? "active" : "hidden"}`}>
-      <nav className="p-4 text-black  flex justify-center items-center">
-        <ul className="flex flex-col gap-4 text-xl	navbar-social fixed top-2 left-2">
+      <nav className="p-4 text-black  flex justify-between ">
+        <ul className="flex flex-col gap-4 text-xl	navbar-social">
           <li>
             <a
               href="https://www.linkedin.com/in/burcu-irem-s-ba0526280/
@@ -64,6 +72,21 @@ function Navbar({ scrollToSection, home, about, projects, skills }) {
           <li onClick={() => scrollToSection(skills)}>Skills</li>
           <li onClick={() => scrollToSection(about)}>About</li>
         </ul>
+        <div id="lumos" className="w-10">
+          <div className="flex items-center gap-y-1 flex-col">
+            <div>{harry}</div>
+            <div className="flex gap-2">
+              <BsSun
+                onClick={() => changeTheme("light-theme")}
+                className="cursor-pointer hover:text-[#DED7B1] duration-300"
+              />
+              <BsMoonFill
+                onClick={() => changeTheme("dark-theme")}
+                className="cursor-pointer hover:text-[#DED7B1] duration-300"
+              />
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   );

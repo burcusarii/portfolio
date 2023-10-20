@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Home from "./components/Home";
@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./assets/ScrollToTop";
 
 function App() {
+  const [themeColor, setThemeColor] = useState("light-theme");
+  const [harry, setHarry] = useState("Nox");
   const home = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
@@ -21,8 +23,17 @@ function App() {
     });
   };
 
+  const changeTheme = (theme) => {
+    setThemeColor(theme);
+
+    if (theme == "light-theme") {
+      setHarry("Nox");
+    } else {
+      setHarry("Lumos");
+    }
+  };
   return (
-    <main>
+    <main className={`${themeColor} duration-300`}>
       <ScrollToTop />
       <Navbar
         scrollToSection={scrollToSection}
@@ -30,6 +41,8 @@ function App() {
         home={home}
         projects={projects}
         skills={skills}
+        changeTheme={changeTheme}
+        harry={harry}
       />
 
       <Home home={home} scrollToSection={scrollToSection} footer={footer} />
