@@ -5,7 +5,7 @@ import translate from "../assets/images/translate.jpg";
 import github from "../assets/images/githubusers.jpg";
 
 import Card from "../assets/Card";
-function Project({ projects }) {
+function Project({ projects, textColor }) {
   const [show, setShow] = useState(false);
   const controlNavbar = () => {
     if (window.scrollY > 150) {
@@ -31,7 +31,9 @@ function Project({ projects }) {
       }`}
     >
       <div className="	w-11/12 m-auto flex flex-col justify-between">
-        <h2 className="text-3xl text-center py-2 font-bold">My Projects</h2>
+        <h2 className={`text-3xl text-center py-2 font-bold ${textColor}	`}>
+          My Projects
+        </h2>
         <div className=" grid grid-cols-4  pt-6  gap-4 justify-items-center">
           <Card
             project_name={"To Do App with React"}

@@ -6,14 +6,14 @@ import react from "../assets/images/react.png";
 import tailwindcss from "../assets/images/tailwindcss.png";
 import bootstrap from "../assets/images/bootstrap.png";
 
-function Skill({ skills }) {
+function Skill({ skills, textColor }) {
   return (
     <div
       ref={skills}
       id="skill"
-      className="flex justify-center items-center h-screen"
+      className={`flex justify-center items-center h-screen ${textColor}`}
     >
-      <div className="	w-11/12		m-auto	 text-white flex-col flex  h-2/4	 justify-between">
+      <div className="	w-11/12		m-auto flex-col flex  h-2/4	 justify-between">
         <h2 className="text-5xl text-center py-2 font-bold">My Skills</h2>
         <div className="flex gap-12	 pt-5 skills justify-between items-center">
           <div className="w-1/6 ">

@@ -10,6 +10,7 @@ function Navbar({
   skills,
   changeTheme,
   harry,
+  textColor,
 }) {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -42,7 +43,7 @@ function Navbar({
   return (
     <div className={`${show ? "active" : "hidden"}`}>
       <nav className="p-4 text-black  flex justify-between ">
-        <ul className="flex flex-col gap-4 text-xl	navbar-social">
+        <ul className={`flex flex-col gap-4 text-xl	navbar-social ${textColor}`}>
           <li>
             <a
               href="https://www.linkedin.com/in/burcu-irem-s-ba0526280/
@@ -66,13 +67,15 @@ function Navbar({
             </a>
           </li>
         </ul>
-        <ul className="list-none flex place-content-center gap-8  text-xl navbar">
+        <ul
+          className={`list-none flex place-content-center gap-8  text-xl navbar ${textColor}`}
+        >
           <li onClick={() => scrollToSection(home)}>Home</li>
           <li onClick={() => scrollToSection(projects)}>Projects</li>
           <li onClick={() => scrollToSection(skills)}>Skills</li>
           <li onClick={() => scrollToSection(about)}>About</li>
         </ul>
-        <div id="lumos" className="w-10">
+        <div id="lumos" className={`w-10 ${textColor}`}>
           <div className="flex items-center gap-y-1 flex-col">
             <div>{harry}</div>
             <div className="flex gap-2">

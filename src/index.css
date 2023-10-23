@@ -8,6 +8,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+ul,
+li {
+  color: inherit;
+}
 .light-theme {
   background-color: #f9f3df;
 }

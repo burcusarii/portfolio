@@ -9,6 +9,7 @@ import ScrollToTop from "./assets/ScrollToTop";
 
 function App() {
   const [themeColor, setThemeColor] = useState("light-theme");
+  const [textColor, setTextColor] = useState("text-black");
   const [harry, setHarry] = useState("Nox");
   const home = useRef(null);
   const about = useRef(null);
@@ -28,8 +29,10 @@ function App() {
 
     if (theme == "light-theme") {
       setHarry("Nox");
+      setTextColor("text-black");
     } else {
       setHarry("Lumos");
+      setTextColor("text-white");
     }
   };
   return (
@@ -43,13 +46,14 @@ function App() {
         skills={skills}
         changeTheme={changeTheme}
         harry={harry}
+        textColor={textColor}
       />
 
       <Home home={home} scrollToSection={scrollToSection} footer={footer} />
-      <Project projects={projects} />
+      <Project projects={projects} textColor={textColor} />
 
-      <Skill skills={skills} />
-      <About about={about} />
+      <Skill skills={skills} textColor={textColor} />
+      <About about={about} textColor={textColor} />
 
       <Footer footer={footer} />
     </main>

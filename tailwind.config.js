@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      "primary-color": "#3f3cbb",
+      "primary-color": "#cc7351",
       "secondary-color": "#9DAB86",
       "light-green": "#DED7B1",
+      white: "#ffffff",
+      black: "#000000",
     },
   },
   plugins: [],
