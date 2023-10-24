@@ -1,14 +1,16 @@
 import React from "react";
 
-function About({ about }) {
+function About({ about, textColor, show }) {
   return (
     <div
       ref={about}
       id="about"
-      className="flex justify-center items-center h-screen"
+      className={` flex justify-center items-center h-screen `}
     >
-      <div className="	w-11/12		m-auto	 text-white">
-        <h2 className="text-3xl text-center py-2 font-bold">About me!</h2>
+      <div className={`w-11/12		m-auto  ${textColor}`}>
+        <h2 className={`text-3xl text-center py-2 font-bold ${textColor}	`}>
+          About Me!{" "}
+        </h2>{" "}
         <div className="flex gap-4">
           <div className="w-3/5">
             <img
@@ -19,16 +21,22 @@ function About({ about }) {
           </div>
           <div className="text-justify">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
-              saepe. Provident delectus similique nesciunt soluta corrupti nam.
-              Quaerat odio ab, deleniti minima consequatur aliquam. Doloremque
-              exercitationem porro explicabo sapiente repellendus?
+              As a candidate who transitioned into the frontend field with a
+              constant desire for self-improvement, I learned HTML, CSS,
+              JavaScript, and the React library on my own. I practiced creating
+              user-friendly and interactive web interfaces to enhance my skills.
+              Throughout this process, I engaged in project-based work, using my
+              fast learning ability, as well as my creative and analytical
+              thinking skills.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-              autem consequuntur, laboriosam, unde necessitatibus eius quo
-              deserunt ea quisquam soluta dolorem est a tempora repudiandae
-              molestias nulla placeat! Aliquam, eveniet!
+              During my university life, I actively participated in club
+              activities within "IEEE-KTU Student Branch." Likewise, in my
+              professional life, I engaged in team collaborations. Therefore, I
+              am someone who works collaboratively and possesses communication
+              skills that enable me to adapt to team environments. I believe
+              that with my motivation, eagerness to learn, and my constant goal
+              of self-improvement, I will add value to the projects I undertake.
             </p>
           </div>
         </div>

@@ -78,15 +78,18 @@ function Navbar({
         <div id="lumos" className={`w-10 ${textColor}`}>
           <div className="flex items-center gap-y-1 flex-col">
             <div>{harry}</div>
-            <div className="flex gap-2">
-              <BsSun
-                onClick={() => changeTheme("light-theme")}
-                className="cursor-pointer hover:text-[#DED7B1] duration-300"
-              />
-              <BsMoonFill
-                onClick={() => changeTheme("dark-theme")}
-                className="cursor-pointer hover:text-[#DED7B1] duration-300"
-              />
+            <div>
+              {harry == "Nox" ? (
+                <BsMoonFill
+                  onClick={() => changeTheme("dark-theme")}
+                  className="cursor-pointer hover:text-[#DED7B1] duration-300"
+                />
+              ) : (
+                <BsSun
+                  onClick={() => changeTheme("light-theme")}
+                  className="cursor-pointer hover:text-[#DED7B1] duration-300"
+                />
+              )}
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 function Card({ project_name, project_link, project_preview, project_img }) {
   return (
-    <div className="card w-56 h-72 bg-secondary-color rounded-2xl flex flex-col gap-y-2 p-2">
+    <div className="card w-56 h-72 bg-transparent   rounded-2xl flex flex-col gap-y-2 p-4">
       <img src={project_img} alt="" className="rounded-2xl flex-1 h-1/2" />
 
       <div className="flex-1 flex-col flex justify-between">

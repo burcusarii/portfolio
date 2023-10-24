@@ -5,35 +5,17 @@ import translate from "../assets/images/translate.jpg";
 import github from "../assets/images/githubusers.jpg";
 
 import Card from "../assets/Card";
-function Project({ projects, textColor }) {
-  const [show, setShow] = useState(false);
-  const controlNavbar = () => {
-    if (window.scrollY > 150) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => {
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, []);
-
+function Project({ projects, textColor, show }) {
   return (
     <div
       ref={projects}
       id="project"
       className={` flex justify-center items-center h-screen ${
         show ? "active-project" : "hidden-project"
-      }`}
+      }  ${textColor}`}
     >
-      <div className="	w-11/12 m-auto flex flex-col justify-between">
-        <h2 className={`text-3xl text-center py-2 font-bold ${textColor}	`}>
-          My Projects
-        </h2>
+      <div className="	w-10/12 m-auto flex flex-col justify-between h-3/5	">
+        <h2 className={`text-3xl text-center py-2 font-bold	`}>My Projects</h2>
         <div className=" grid grid-cols-4  pt-6  gap-4 justify-items-center">
           <Card
             project_name={"To Do App with React"}
