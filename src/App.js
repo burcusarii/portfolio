@@ -6,6 +6,7 @@ import Skill from "./components/Skill";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import ScrollToTop from "./assets/ScrollToTop";
+import Contact from "./components/Contact";
 
 function App() {
   const [themeColor, setThemeColor] = useState("light-theme");
@@ -16,7 +17,7 @@ function App() {
   const about = useRef(null);
   const projects = useRef(null);
   const skills = useRef(null);
-  const footer = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -65,13 +66,13 @@ function App() {
         textColor={textColor}
       />
 
-      <Home home={home} scrollToSection={scrollToSection} footer={footer} />
+      <Home home={home} scrollToSection={scrollToSection} contact={contact} />
       <Project projects={projects} textColor={textColor} show={show} />
 
       <Skill skills={skills} textColor={textColor} />
       <About about={about} textColor={textColor} />
-
-      <Footer footer={footer} textColor={textColor} />
+      <Contact contact={contact} textColor={textColor} />
+      <Footer textColor={textColor} />
     </main>
   );
 }

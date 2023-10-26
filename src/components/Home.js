@@ -1,7 +1,7 @@
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
 import burcu from "../assets/images/burcu.png";
-function Home({ home, footer, scrollToSection }) {
+function Home({ home, contact, scrollToSection }) {
   return (
     <div ref={home} id="home" className="flex justify-center items-center">
       <div className="flex items-center justify-center w-10/12">
@@ -18,7 +18,7 @@ function Home({ home, footer, scrollToSection }) {
             />
           </h1>
           <button
-            onClick={() => scrollToSection(footer)}
+            onClick={() => scrollToSection(contact)}
             className="border rounded-2xl		border-black	px-9 py-2 mt-5 duration-300	bg-secondary-color  hover:bg-light-green animate__animated animate__swing"
           >
             Contact Me!

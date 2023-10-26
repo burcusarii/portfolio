@@ -7,14 +7,14 @@ function About({ about, textColor, show }) {
       id="about"
       className={` flex justify-center items-center h-screen `}
     >
-      <div className={`w-11/12		m-auto  ${textColor}`}>
-        <h2 className={`text-3xl text-center py-2 font-bold ${textColor}	`}>
+      <div className={`w-8/12		m-auto  ${textColor}`}>
+        <h2 className={`text-3xl text-center py-4 font-bold ${textColor}	`}>
           About Me!{" "}
         </h2>{" "}
-        <div className="flex gap-4">
-          <div className="w-3/5">
+        <div className="flex gap-8 items-center">
+          <div className="">
             <img
-              className="w-full"
+              className="w-full rounded-full"
               src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1452&q=80"
               alt=""
             />

@@ -1,9 +1,8 @@
 import React from "react";
 
-function Footer({ footer, textColor }) {
+function Footer({ textColor }) {
   return (
     <div
-      ref={footer}
       id="footer"
       className={`flex justify-center items-center h-20 ${textColor}`}
     >
