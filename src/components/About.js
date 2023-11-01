@@ -1,5 +1,5 @@
 import React from "react";
-
+import burcu from "../assets/images/burcu-2.jpeg";
 function About({ about, textColor, show }) {
   return (
     <div
@@ -13,11 +13,7 @@ function About({ about, textColor, show }) {
         </h2>{" "}
         <div className="flex gap-8 items-center">
           <div className="">
-            <img
-              className="w-full rounded-full"
-              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1452&q=80"
-              alt=""
-            />
+            <img className="w-full rounded-full" src={burcu} alt="" />
           </div>
           <div className="text-justify">
             <p>
@@ -29,6 +25,7 @@ function About({ about, textColor, show }) {
               fast learning ability, as well as my creative and analytical
               thinking skills.
             </p>
+            <br />{" "}
             <p>
               During my university life, I actively participated in club
               activities within "IEEE-KTU Student Branch." Likewise, in my
