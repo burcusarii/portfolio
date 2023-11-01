@@ -88,14 +88,16 @@ li {
 
 /* PROJECT */
 
-.card {
-  transition: 0.5s;
+.projects-card {
+  transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.card:hover {
+.projects-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(0.95);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .img-shadow {
