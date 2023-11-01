@@ -41,7 +41,7 @@ function Navbar({
   }, [lastScrollY]);
 
   return (
-    <div className={`${show ? "active" : "hidden"}`}>
+    <div className={`${show ? "active" : "hidden"} z-50`}>
       <nav className="p-4 text-black  flex justify-between ">
         <ul className={`flex flex-col gap-4 text-xl	navbar-social ${textColor}`}>
           <li>
@@ -67,14 +67,17 @@ function Navbar({
             </a>
           </li>
         </ul>
-        <ul
-          className={`list-none flex place-content-center gap-8  text-xl navbar ${textColor}`}
-        >
-          <li onClick={() => scrollToSection(home)}>Home</li>
-          <li onClick={() => scrollToSection(projects)}>Projects</li>
-          <li onClick={() => scrollToSection(skills)}>Skills</li>
-          <li onClick={() => scrollToSection(about)}>About</li>
-        </ul>
+        <div>
+          <ul
+            className={`list-none flex place-content-center gap-8  text-xl navbar ${textColor} bg-secondary-color rounded-full py-3 px-6 `}
+          >
+            <li onClick={() => scrollToSection(home)}>Home</li>
+            <li onClick={() => scrollToSection(projects)}>Projects</li>
+            <li onClick={() => scrollToSection(skills)}>Skills</li>
+            <li onClick={() => scrollToSection(about)}>About</li>
+          </ul>
+        </div>
+
         <div id="lumos" className={`w-10 ${textColor}`}>
           <div className="flex items-center gap-y-1 flex-col">
             <div>{harry}</div>
