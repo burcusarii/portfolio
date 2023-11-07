@@ -36,18 +36,16 @@ li {
 }
 
 .active {
-  height: 4rem;
   position: fixed;
-  transition: 1s linear;
+  transition: 0.2s linear;
   width: 100%;
   top: 0;
 }
-.hidden {
-  height: 4rem;
+.hidden-nav {
   position: fixed;
-  transition: 1s linear;
+  transition: 0.2 linear;
   width: 100%;
-  top: -80px;
+  top: -120px;
 }
 
 .active-project {

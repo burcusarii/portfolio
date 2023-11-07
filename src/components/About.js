@@ -5,13 +5,13 @@ function About({ about, textColor, show }) {
     <div
       ref={about}
       id="about"
-      className={` flex justify-center items-center h-screen `}
+      className={`mt-40 sm:mt-0 flex justify-center items-center sm:h-screen `}
     >
       <div className={`w-8/12		m-auto  ${textColor}`}>
         <h2 className={`text-3xl text-center py-4 font-bold ${textColor}	`}>
           About Me!{" "}
         </h2>{" "}
-        <div className="flex gap-8 items-center">
+        <div className="flex flex-col sm:flex-row gap-8 items-center">
           <div className="">
             <img className="w-full rounded-full" src={burcu} alt="" />
           </div>

@@ -6,12 +6,10 @@ function Contact({ contact, textColor }) {
     <div
       ref={contact}
       id="contact"
-      className={` flex justify-center items-center h-screen`}
+      className={`  ${textColor} flex justify-center items-center h-screen`}
     >
       <div className="	w-8/12 m-auto flex flex-col justify-between items-center h-1/2">
-        <h2 className={`text-3xl text-center py-2 font-bold ${textColor}	`}>
-          Contact Me!
-        </h2>
+        <h2 className={`text-3xl text-center py-2 font-bold	`}>Contact Me!</h2>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 items-center">
             <div>

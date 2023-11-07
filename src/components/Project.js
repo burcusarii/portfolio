@@ -7,20 +7,19 @@ import css from "../assets/images/css-3.png";
 import html from "../assets/images/html5.png";
 import js from "../assets/images/js.png";
 import react from "../assets/images/react.png";
-import tailwindcss from "../assets/images/tailwindcss.png";
 import bootstrap from "../assets/images/bootstrap.png";
 function Project({ projects, textColor, show }) {
   return (
     <div
       ref={projects}
       id="project"
-      className={` flex justify-center items-center h-screen ${
+      className={` mt-40 sm:mt-0 flex justify-center items-center sm:h-screen ${
         show ? "active-project" : "hidden-project"
       }  ${textColor}`}
     >
       <div className="	w-10/12 m-auto flex flex-col justify-between h-4/6	">
         <h2 className={`text-3xl text-center  font-bold	`}>My Projects</h2>
-        <div className=" grid grid-cols-4  pt-6  gap-4 justify-items-center">
+        <div className=" grid sm:grid-cols-2 lg:grid-cols-4  pt-6  gap-4 justify-items-center">
           <ProjectsCard
             technology={[html, css, js, react]}
             project_name={"To Do App with React"}
